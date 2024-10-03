@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="genreA" fx:id="genreAnc" prefHeight="645.0" prefWidth="1010.0" style="-fx-background-color: gray;" stylesheets="@genre.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.GenreC">
+   <children>
+      <AnchorPane id="genre" fx:id="rock" layoutX="196.0" layoutY="70.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="13.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rock.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="genre" fx:id="society" layoutX="196.0" layoutY="397.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: grayred;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/society.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="genre" fx:id="hiphop" layoutX="194.0" layoutY="234.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hiphop.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="genre" fx:id="jazz" layoutX="648.0" layoutY="65.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/jazz.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="genre" fx:id="history" layoutX="648.0" layoutY="392.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/history.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="genre" fx:id="trueCrime" layoutX="646.0" layoutY="229.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/trueCrime.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="genre" fx:id="pop" layoutX="424.0" layoutY="69.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="16.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pop.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="genre" fx:id="interView" layoutX="424.0" layoutY="396.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="15.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/interView.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="genre" fx:id="country" layoutX="422.0" layoutY="233.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="13.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/country.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="save" layoutX="479.0" layoutY="577.0" onAction="#save" text="Save" />
+      <Label alignment="CENTER" layoutX="223.0" layoutY="17.0" prefHeight="34.0" prefWidth="535.0" text="Select your favorite genres" />
+   </children>
+</AnchorPane>

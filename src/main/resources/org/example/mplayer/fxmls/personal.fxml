@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.PersonalC">
+    <children>
+        <Label layoutX="49.0" prefHeight="121.0" prefWidth="434.0" text="PERSONAL INFORMATION">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="140.0" prefHeight="38.0" prefWidth="182.0" text="UserName " />
+        <Label layoutX="29.0" layoutY="231.0" prefHeight="38.0" prefWidth="174.0" text="EmailAddress " />
+        <Label layoutX="29.0" layoutY="332.0" prefHeight="38.0" prefWidth="194.0" text="Name " />
+        <Label fx:id="creditIncome" layoutX="335.0" layoutY="333.0" prefHeight="38.0" prefWidth="94.0" text="Credit " />
+        <Label fx:id="premiumXpT" layoutX="635.0" layoutY="142.0" prefHeight="38.0" prefWidth="265.0" text="Premium Expiration Date " />
+        <Line endX="513.0" endY="-266.0" layoutX="379.0" layoutY="374.0" startX="-337.0" startY="-266.0" />
+      <Label layoutX="342.0" layoutY="140.0" prefHeight="38.0" prefWidth="174.0" text="Phone number " />
+      <Label layoutX="339.0" layoutY="237.0" prefHeight="38.0" prefWidth="214.0" text="Birth Date " />
+      <Label fx:id="remDaysT" layoutX="630.0" layoutY="239.0" prefHeight="38.0" prefWidth="266.0" text="Remaining Days of premuim " />
+      <AnchorPane id="searchAnc" layoutX="41.0" layoutY="180.0" prefHeight="38.0" prefWidth="206.0">
+         <children>
+              <Label id="ArtistN" fx:id="username" layoutX="14.0" prefHeight="38.0" prefWidth="182.0" text="MaryamOi" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="searchAnc" fx:id="creditAnc" layoutX="346.0" layoutY="372.0" prefHeight="41.0" prefWidth="223.0">
+         <children>
+              <Label id="ArtistN" fx:id="credit" layoutX="14.0" layoutY="2.0" prefHeight="38.0" prefWidth="94.0" text="4$" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="searchAnc" fx:id="exDateAnc" layoutX="643.0" layoutY="180.0" prefHeight="42.0" prefWidth="243.0">
+         <children>
+              <Label id="ArtistN" fx:id="premiumXp" layoutX="14.0" layoutY="4.0" prefHeight="38.0" prefWidth="230.0" text="2024-july-4" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="searchAnc" layoutX="35.0" layoutY="371.0" prefHeight="38.0" prefWidth="206.0">
+         <children>
+            <Label id="ArtistN" fx:id="name" layoutX="19.0" prefHeight="38.0" prefWidth="194.0" text="maryam" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="searchAnc" layoutX="350.0" layoutY="180.0" prefHeight="38.0" prefWidth="223.0">
+         <children>
+            <Label id="ArtistN" fx:id="phone" layoutX="14.0" prefHeight="38.0" prefWidth="94.0" text="09877655443" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="searchAnc" layoutX="347.0" layoutY="275.0" prefHeight="38.0" prefWidth="223.0">
+         <children>
+              <Label id="ArtistN" fx:id="birth" layoutX="14.0" prefHeight="38.0" prefWidth="206.0" text="2005-May-10" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="searchAnc" layoutX="37.0" layoutY="269.0" prefHeight="38.0" prefWidth="206.0">
+         <children>
+              <Label id="ArtistN" fx:id="email" layoutX="14.0" prefHeight="38.0" prefWidth="182.0" text="asduiolsls@gmail.com" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="searchAnc" fx:id="remDayAnc" layoutX="646.0" layoutY="277.0" prefHeight="44.0" prefWidth="245.0">
+         <children>
+            <Label id="ArtistN" fx:id="remDays" layoutX="14.0" layoutY="5.0" prefHeight="38.0" prefWidth="166.0" text="60 days" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="addCredit" layoutX="429.0" layoutY="333.0" onMouseClicked="#addCredit" prefHeight="38.0" prefWidth="22.0" text="+">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField id="field" fx:id="addCreditField" layoutX="357.0" layoutY="450.0" prefHeight="26.0" prefWidth="141.0" promptText="0" />
+      <Line id="line" fx:id="addCreditLine" endX="80.79998779296875" endY="-0.399993896484375" layoutX="423.0" layoutY="476.0" startX="-66.0" startY="0.399993896484375" />
+      <JFXButton id="Favorites" fx:id="AddBtn" layoutX="516.0" layoutY="450.0" onAction="#AddClick" text="Add" />
+    </children>
+</AnchorPane>

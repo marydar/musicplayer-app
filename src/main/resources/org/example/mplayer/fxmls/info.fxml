@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="errorAnc" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.InfoC">
+   <children>
+      <JFXButton id="ok" fx:id="ok" layoutX="14.0" layoutY="14.0" onAction="#okClick" text="Done" />
+      <Label id="infoLbl" fx:id="content" layoutX="25.0" layoutY="40.0" prefHeight="239.0" prefWidth="358.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.HomeC">
+    <children>
+        <AnchorPane id="homeUp" prefHeight="212.0" prefWidth="1123.0">
+            <children>
+                <Label id="homeTitle" fx:id="trendLbl" alignment="CENTER" layoutX="320.0" layoutY="59.0" prefHeight="89.0" prefWidth="386.0" text="Trending">
+               <font>
+                  <Font size="61.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+        <ScrollPane id="panes" layoutY="206.0" prefHeight="439.0" prefWidth="1123.0">
+            <content>
+                <Pane id="panes" fx:id="trendPane" prefHeight="453.0" prefWidth="1107.0" />
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

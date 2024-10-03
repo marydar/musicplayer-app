@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="audioAnc" fx:id="AudioAnc" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.FullScreenC">
+    <children>
+        <Label id="lyrics" fx:id="lyrics" layoutX="595.0" layoutY="130.0" prefHeight="392.0" prefWidth="366.0" />
+        <JFXButton id="Cover" fx:id="cover" layoutX="52.0" layoutY="43.0" prefHeight="500.0" prefWidth="500.0" />
+      <Label fx:id="audioName" alignment="CENTER" layoutX="636.0" layoutY="64.0" prefHeight="48.0" prefWidth="294.0" />
+    </children>
+</AnchorPane>

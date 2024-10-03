@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorOUT" prefHeight="645.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.GetPremiumC">
+    <children>
+        <AnchorPane id="anchorIN" layoutX="62.0" layoutY="100.0" prefHeight="303.0" prefWidth="257.0">
+            <children>
+                <Label alignment="CENTER" layoutX="60.0" layoutY="30.0" prefHeight="45.0" prefWidth="129.0" text="30 days" />
+                <Label alignment="CENTER" layoutX="52.0" layoutY="173.0" prefHeight="45.0" prefWidth="154.0" text="5$" />
+            </children>
+        </AnchorPane>
+        <AnchorPane id="anchorIN" layoutX="379.0" layoutY="100.0" prefHeight="303.0" prefWidth="257.0">
+            <children>
+                <Label alignment="CENTER" layoutX="64.0" layoutY="32.0" prefHeight="45.0" prefWidth="129.0" text="60 days" />
+                <Label alignment="CENTER" layoutX="52.0" layoutY="184.0" prefHeight="45.0" prefWidth="154.0" text="9$" />
+            </children>
+        </AnchorPane>
+        <AnchorPane id="anchorIN" layoutX="705.0" layoutY="100.0" prefHeight="303.0" prefWidth="257.0">
+            <children>
+                <Label alignment="CENTER" layoutX="64.0" layoutY="35.0" prefHeight="45.0" prefWidth="129.0" text="180 days" />
+                <Label alignment="CENTER" layoutX="52.0" layoutY="186.0" prefHeight="45.0" prefWidth="154.0" text="14$" />
+            </children>
+        </AnchorPane>
+        <JFXButton id="anchorIN" fx:id="get30" layoutX="141.0" layoutY="412.0" onAction="#get30" prefHeight="52.0" prefWidth="97.0" text="Purchase" textFill="WHITE" />
+        <JFXButton id="anchorIN" fx:id="get180" layoutX="784.0" layoutY="412.0" onAction="#get180" prefHeight="52.0" prefWidth="97.0" text="Purchase" textFill="WHITE" />
+        <JFXButton id="anchorIN" fx:id="get60" layoutX="450.0" layoutY="412.0" onAction="#get60" prefHeight="52.0" prefWidth="97.0" text="Purchase" textFill="WHITE" />
+    </children>
+</AnchorPane>

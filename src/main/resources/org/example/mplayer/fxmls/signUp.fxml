@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.SignupC">
+   <children>
+      <AnchorPane id="anchorIN" layoutX="264.0" layoutY="56.0" prefHeight="543.0" prefWidth="435.0">
+         <children>
+            <RadioButton id="radio" fx:id="L" layoutX="79.0" layoutY="25.0" mnemonicParsing="false" text="Listener">
+               <toggleGroup>
+                  <ToggleGroup fx:id="type" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton id="radio" fx:id="S" layoutX="182.0" layoutY="25.0" mnemonicParsing="false" text="Singer" toggleGroup="$type" />
+            <RadioButton id="radio" fx:id="P" layoutX="273.0" layoutY="23.0" mnemonicParsing="false" text="Podcaster" toggleGroup="$type" />
+            <Label id="ArtistN" fx:id="bioTitle" layoutX="16.0" layoutY="447.0" prefHeight="20.0" prefWidth="199.0" text="Bio :" />
+            <Label id="ArtistN" layoutX="121.0" layoutY="118.0" prefHeight="21.0" prefWidth="204.0" text="Email-Address :" />
+            <Label id="ArtistN" layoutX="119.0" layoutY="261.0" prefHeight="21.0" prefWidth="206.0" text="Phone-number :" />
+            <Label id="ArtistN" layoutX="124.0" layoutY="185.0" prefHeight="21.0" prefWidth="198.0" text="Password :" />
+            <Label id="ArtistN" layoutX="122.0" layoutY="323.0" prefHeight="27.0" prefWidth="228.0" text="Name :" />
+            <Label id="ArtistN" layoutX="16.0" layoutY="409.0" prefHeight="28.0" prefWidth="113.0" text="Birth-Date :" />
+            <TextField id="field" fx:id="email" layoutX="115.0" layoutY="141.0" prefHeight="26.0" prefWidth="171.0" />
+            <TextField id="field" fx:id="number" layoutX="112.0" layoutY="280.0" prefHeight="26.0" prefWidth="171.0" />
+            <TextField id="field" fx:id="name" layoutX="112.0" layoutY="349.0" prefHeight="26.0" prefWidth="171.0" />
+            <Line id="line" endX="66.5999755859375" layoutX="234.0" layoutY="374.0" startX="-116.99996948242188" startY="1.3999786376953125" />
+            <Line id="line" endX="66.5999755859375" layoutX="233.0" layoutY="307.0" startX="-116.99996948242188" startY="1.3999786376953125" />
+            <Line id="line" endX="66.5999755859375" layoutX="239.0" layoutY="233.0" startX="-116.99996948242188" startY="1.3999786376953125" />
+            <Line id="line" endX="66.5999755859375" layoutX="239.0" layoutY="165.0" startX="-116.99996948242188" startY="1.3999786376953125" />
+            <JFXComboBox id="ComboBox" fx:id="DayCombo" layoutX="121.0" layoutY="399.0" promptText="Day" visibleRowCount="3" />
+            <JFXComboBox id="ComboBox" fx:id="MonthCombo" layoutX="217.0" layoutY="399.0" promptText="Month" visibleRowCount="3" />
+            <JFXComboBox id="ComboBox" fx:id="YearCombo" layoutX="323.0" layoutY="398.0" promptText="Year" visibleRowCount="3" />
+            <JFXTextArea id="area" fx:id="bio" layoutX="22.0" layoutY="467.0" prefHeight="43.0" prefWidth="400.0" />
+            <Label id="ArtistN" layoutX="126.0" layoutY="52.0" prefHeight="21.0" prefWidth="204.0" text="Username :" />
+            <TextField id="field" fx:id="username" layoutX="115.0" layoutY="78.0" prefHeight="26.0" prefWidth="171.0" />
+            <Line id="line" endX="66.5999755859375" layoutX="238.0" layoutY="102.0" startX="-116.99996948242188" startY="1.3999786376953125" />
+            <PasswordField id="field" fx:id="password" layoutX="117.0" layoutY="207.0" prefHeight="26.0" prefWidth="171.0" />
+         </children>
+      </AnchorPane>
+      <Label id="login" alignment="CENTER" layoutX="369.0" layoutY="35.0" prefHeight="22.0" prefWidth="94.0" text="Sign up" />
+      <JFXButton id="ArtistN" fx:id="goHome" layoutX="444.0" onAction="#goHomeClick" prefHeight="26.0" prefWidth="37.0" />
+      <JFXButton id="signUp" fx:id="SignUp" layoutX="442.0" layoutY="619.0" onAction="#signUpClick" text="Sign up" />
+      <JFXButton id="sign" fx:id="goLogin" layoutX="468.0" layoutY="35.0" onAction="#goLoginClick" prefHeight="22.0" prefWidth="107.0" text="Login" />
+   </children>
+</AnchorPane>

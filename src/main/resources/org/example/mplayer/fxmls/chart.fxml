@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="645.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.ChartC">
+   <children>
+      <LineChart fx:id="chart" layoutX="109.0" layoutY="46.0" prefHeight="501.0" prefWidth="818.0">
+        <xAxis>
+          <CategoryAxis label="Songs" prefHeight="37.0" prefWidth="738.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="play" minorTickCount="1" minorTickLength="2.0" prefHeight="458.0" prefWidth="51.0" side="LEFT" tickLength="4.0" tickUnit="2.0" upperBound="50.0" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="ArtAnc" fx:id="ArtAnc" prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.ArtistC">
+    <children>
+        <AnchorPane id="AncIN" fx:id="AncIN" layoutX="67.0" layoutY="54.0" prefHeight="226.0" prefWidth="215.0">
+            <children>
+                <Circle id="imageC" fx:id="imageC" fill="DODGERBLUE" layoutX="108.0" layoutY="114.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+                <Label id="name" fx:id="name" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="214.0" prefHeight="27.0" prefWidth="209.0" text="kjhgfdsydf" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorOUT" prefHeight="66.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.ReportCC">
+   <children>
+      <AnchorPane id="anchorIN" layoutX="306.0" layoutY="10.0" prefHeight="46.0" prefWidth="459.0">
+         <children>
+            <Label id="ArtistN" fx:id="fromLbl" layoutX="45.0" layoutY="9.0" prefHeight="30.0" prefWidth="125.0" text="From : id" />
+            <Label id="ArtistN" fx:id="ToLbl" layoutX="285.0" layoutY="9.0" prefHeight="30.0" prefWidth="125.0" text="To : id" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

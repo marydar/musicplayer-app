@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchorOUT" fx:id="anchorOut" prefHeight="66.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.Song">
+    <children>
+        <AnchorPane id="anchorIN" fx:id="anchorIN" layoutX="70.0" layoutY="10.0" prefHeight="70.0" prefWidth="917.0">
+            <children>
+                <Label fx:id="songName" layoutX="74.0" layoutY="11.0" prefHeight="32.0" prefWidth="318.0" text="Song Name">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+                <Label id="ArtistN" fx:id="Artist" layoutX="75.0" layoutY="39.0" prefHeight="18.0" prefWidth="194.0" text="Artist Name" />
+                <Label id="time" fx:id="time" layoutX="866.0" layoutY="23.0" prefHeight="27.0" prefWidth="50.0" text="3:14">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+            <Circle fx:id="songCover" fill="DODGERBLUE" layoutX="35.0" layoutY="36.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

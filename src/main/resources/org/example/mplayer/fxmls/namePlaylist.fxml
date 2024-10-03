@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.NamePlaylist">
+   <children>
+      <TextField fx:id="NameFeild" layoutX="17.0" layoutY="37.0" prefHeight="26.0" prefWidth="177.0" promptText="PlayList's name :" style="-fx-background-color: transparent;" />
+      <Line endX="65.89997863769531" endY="1.1444091796875E-5" layoutX="117.0" layoutY="63.0" startX="-100.0" startY="1.1444091796875E-5" />
+      <JFXButton fx:id="create" layoutX="24.0" layoutY="73.0" onAction="#createClick" text="Create" />
+      <JFXButton fx:id="cancel" layoutX="125.0" layoutY="73.0" onAction="#cancelClick" text="Cancel" />
+      <Label layoutX="16.0" layoutY="6.0" prefHeight="26.0" prefWidth="167.0" text="PlayList's name" />
+   </children>
+</AnchorPane>

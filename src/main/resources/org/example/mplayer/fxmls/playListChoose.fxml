@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.PlayListChoose">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" layoutY="39.0" prefHeight="168.0" prefWidth="329.0" style="-fx-background-color: gray;">
+            <content>
+                <VBox fx:id="vbox" prefHeight="261.0" prefWidth="324.0" style="-fx-background-color: gray;" />
+            </content>
+        </ScrollPane>
+        <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="45.0" prefWidth="329.0" style="-fx-background-color: gray;">
+            <children>
+                <JFXButton fx:id="done" layoutX="107.0" layoutY="10.0" onAction="#doneClick" prefHeight="25.0" prefWidth="88.0" ripplerFill="WHITE" style="-fx-background-color: #2f2f2f; -fx-text-fill: white;" text="Done">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

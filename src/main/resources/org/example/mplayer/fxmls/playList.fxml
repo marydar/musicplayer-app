@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="plAnc" fx:id="plAnc" prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.PlayListC">
+   <children>
+      <AnchorPane id="INAnchor" fx:id="AncIn" layoutX="55.0" layoutY="37.0" prefHeight="265.0" prefWidth="252.0">
+         <children>
+            <Rectangle id="imageS" fx:id="imageS" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="26.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Label id="name" fx:id="playlistName" alignment="CENTER" layoutX="21.0" layoutY="234.0" prefHeight="42.0" prefWidth="209.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.LibraryC">
+    <children>
+        <AnchorPane layoutX="-3.0" layoutY="-4.0" prefHeight="67.0" prefWidth="1142.0" style="-fx-background-color: transparent;">
+            <children>
+                <JFXButton id="Favorites" fx:id="Artists" layoutX="25.0" layoutY="25.0" onAction="#ArtClick" text="Favorites" />
+                <JFXButton id="Favorites" fx:id="Favorites" layoutX="121.0" layoutY="25.0" onAction="#FavClick" text="Artists" />
+                <JFXButton id="Favorites" fx:id="GetPremuim" layoutX="409.0" layoutY="25.0" onAction="#PremuimClick" text="Get-Premium" />
+                <JFXButton id="Favorites" fx:id="personal" layoutX="220.0" layoutY="25.0" onAction="#personalClick" text="Personal" />
+                <JFXButton id="Favorites" fx:id="playlist" layoutX="313.0" layoutY="25.0" onAction="#playListClick" text="PlayLists" />
+            </children>
+        </AnchorPane>
+        <ScrollPane id="panes" hbarPolicy="NEVER" layoutX="-1.0" layoutY="62.0" prefHeight="583.0" prefWidth="1139.0">
+            <content>
+                <Pane id="panes" fx:id="libPane" prefHeight="700.0" prefWidth="1125.0">
+               <children>
+                  <Label fx:id="FavEmptyLbl" alignment="CENTER" layoutX="389.0" layoutY="258.0" prefHeight="17.0" prefWidth="306.0" text="Empty" />
+                  <Label fx:id="ArtEmptyLbl" alignment="CENTER" layoutX="389.0" layoutY="258.0" prefHeight="17.0" prefWidth="306.0" text="Empty" />
+               </children></Pane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

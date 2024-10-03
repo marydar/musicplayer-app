@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.ListOfPlayList">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="95.0" prefWidth="1010.0">
+         <children>
+            <Label fx:id="playListName" alignment="CENTER" layoutX="339.0" layoutY="14.0" prefHeight="62.0" prefWidth="362.0" text="PlayListName" />
+            <JFXButton id="Button1" fx:id="sort" layoutX="830.0" layoutY="34.0" onAction="#sortClick" text="Sort" />
+            <Line id="line" endX="161.39996337890625" endY="-7.62939453125E-6" layoutX="540.0" layoutY="75.0" startX="-189.86666870117188" />
+         </children>
+      </AnchorPane>
+      <ScrollPane hbarPolicy="NEVER" layoutY="95.0" prefHeight="545.0" prefWidth="1096.0">
+         <content>
+            <Pane id="panes" fx:id="listPane" prefHeight="633.0" prefWidth="1083.0">
+               <children>
+                  <Label fx:id="noSongLbl" alignment="CENTER" layoutX="423.0" layoutY="128.0" prefHeight="58.0" prefWidth="198.0" text="This playlist is empty" />
+               </children></Pane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

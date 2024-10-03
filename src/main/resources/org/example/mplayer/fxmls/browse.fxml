@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mplayer.view.BrowseC">
+    <children>
+        <AnchorPane prefHeight="133.0" prefWidth="1010.0" style="-fx-background-color: transparent;">
+            <children>
+            <AnchorPane id="searchAnc" layoutX="342.0" layoutY="33.0" prefHeight="42.0" prefWidth="327.0">
+               <children>
+                      <TextField fx:id="field" layoutX="11.0" layoutY="8.0" prefHeight="33.0" prefWidth="264.0" promptText="search here" style="-fx-background-color: transparent;" />
+                      <JFXButton id="field" fx:id="search" layoutX="270.0" layoutY="-2.0" onAction="#searchClick" prefHeight="46.0" prefWidth="52.0" />
+               </children>
+            </AnchorPane>
+            <JFXButton id="searchButtons" fx:id="artists" layoutX="390.0" layoutY="100.0" onAction="#artistClick" prefHeight="35.0" prefWidth="111.0" text="Artists" />
+            <JFXButton id="searchButtons" fx:id="audios" layoutX="520.0" layoutY="99.0" onAction="#audioClick" prefHeight="35.0" prefWidth="99.0" text="Songs" />
+            </children>
+        </AnchorPane>
+        <ScrollPane hbarPolicy="NEVER" layoutY="133.0" prefHeight="515.0" prefWidth="1116.0" style="-fx-background-color: transparent;">
+            <content>
+                <Pane id="panes" fx:id="searchPane" prefHeight="643.0" prefWidth="1099.0" />
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>
